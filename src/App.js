@@ -1,9 +1,9 @@
 import Signup from "./components/authentication/registerForm";
 import Login from "./components/authentication/loginForm";
-import { Routes, Route, Link, Redirect, useRoutes } from 'react-router-dom';
+import Home from "./components/Home/Home";
+import { useRoutes } from 'react-router-dom';
 
 function App() {
-
   const element = useRoutes([
     {
       path: '/',
@@ -12,9 +12,12 @@ function App() {
     {
       path: '/register',
       element: <Signup />
+    },
+    {
+      path: '/home',
+      element: <Home />
     }
   ])
-
   return element
 }
 
