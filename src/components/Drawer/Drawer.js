@@ -8,10 +8,10 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import {Header} from '..';
 import { Menu } from "@material-ui/icons";
 import { IconButton } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-import {Header} from "..";
 
 const useStyles = makeStyles({
   list: {
@@ -76,7 +76,7 @@ export default function SwipeableTemporaryDrawer() {
     <div>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Header/>
+          <Header>
           <IconButton
               edge="start"
               className={classes.menuButton}
@@ -86,6 +86,7 @@ export default function SwipeableTemporaryDrawer() {
             >
               <Menu />
             </IconButton>
+          </Header>
 
           <SwipeableDrawer
             anchor={anchor}

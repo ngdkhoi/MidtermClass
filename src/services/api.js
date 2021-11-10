@@ -1,7 +1,6 @@
 import axios, {Method} from 'axios';
 import cookie from 'react-cookies';
 
-
 const ErrorResponse = (e) => {
     try {
         console.log("----------------------------------------------")
@@ -33,6 +32,5 @@ const AxiosBasic = async ({ url, method, headers = {}, data = {} }) => {
         }).catch(err=> reject(ErrorResponse(err)))
     })
 }
-
 
 export default AxiosBasic
