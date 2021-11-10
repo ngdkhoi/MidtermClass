@@ -5,7 +5,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Signup from './registerForm';
 import authApi from '../../apis/auth.api';
-import cookie from 'react-cookies'
+import cookie from 'react-cookies';
 
 const Login = () => {
 
